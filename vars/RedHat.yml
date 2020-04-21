@@ -1,0 +1,4 @@
+---
+nginx_user : 'nginx'
+nginx_repo : '/etc/yum.repos.d/nginx.repo'
+nginx_package : 'nginx'

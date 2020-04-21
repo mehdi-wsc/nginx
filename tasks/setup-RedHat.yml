@@ -1,0 +1,23 @@
+---
+- name: Touch a nginx.repo
+  file:
+    path: "{{nginx_repo}}"
+    state: touch
+    mode: u=rw,g=r,o=r
+
+
+- name: add config to nginx.repo
+  copy:
+    src: ../files/redhat-repo.txt
+    dest: /etc/yum.repos.d/nginx.repo
+
+- name: install the latest version of nginx
+  yum:
+    name: "{{nginx_package}}"
+    state: latest
+    update_cache: yes
+
+- name: Start service Redhat, if not started
+  service:
+    name: "{{nginx_package}}"
+    state: started
