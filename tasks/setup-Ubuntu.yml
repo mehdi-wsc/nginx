@@ -2,7 +2,7 @@
 - name: install nginx in ubuntu
   apt:
     name: "{{ nginx_package }}"
-    state: latest
+    state: present
     update_cache: yes
 - name: start nginx ubuntu
   service:

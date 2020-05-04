@@ -11,7 +11,7 @@
 - name: install the latest version of nginx
   yum:
     name: "{{ nginx_package }}"
-    state: latest
+    state: present
     update_cache: yes
 - name: Start service Redhat, if not started
   service:
