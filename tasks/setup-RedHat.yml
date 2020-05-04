@@ -6,7 +6,7 @@
     mode: u=rw,g=r,o=r
 - name: add config to nginx.repo
   copy:
-    src: ../files/redhat-repo.txt
+    src: "{{ role_path }}/files/redhat-repo.txt"
     dest: /etc/yum.repos.d/nginx.repo
 - name: install the latest version of nginx
   yum:
