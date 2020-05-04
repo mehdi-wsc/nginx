@@ -6,5 +6,5 @@
     update_cache: yes
 - name: start nginx ubuntu
   service:
-      name: "{{ nginx_service }}"
-      state: started
+    name: "{{ nginx_service }}"
+    state: started

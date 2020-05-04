@@ -6,9 +6,9 @@
   changed_when: false
 - name: Create directory for stream conf files
   file:
-    path: "{{ nginx_path }}"
-    state: directory
+   path: "{{ nginx_path }}"
+   state: directory
 - name: Ensure nginx is installed.
   apt:
-    name: "{{ nginx_package }}"
-    state: present
+   name: "{{ nginx_package }}"
+   state: present

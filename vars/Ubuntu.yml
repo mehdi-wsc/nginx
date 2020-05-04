@@ -1,4 +1,4 @@
 ---
-- nginx_user : 'www-data'
+- nginx_user: 'www-data'
 - nginx_package: 'nginx'
-- nginx_service : nginx.service'
+- nginx_service: nginx.service'
