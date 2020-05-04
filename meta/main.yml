@@ -30,7 +30,7 @@ galaxy_info:
   #
   platforms:
   - name: RedHat
-  - name: Amazon Linux
+  - name: Amazon
   - name: Ubuntu
   - name: Debian
     versions:
