@@ -33,8 +33,6 @@ galaxy_info:
   - name: Amazon
   - name: Ubuntu
   - name: Debian
-    versions:
-     - all
 
 
   galaxy_tags: []
