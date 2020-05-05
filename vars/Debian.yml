@@ -1,4 +1,4 @@
 ---
-- nginx_user: 'www-data'
-- nginx_path: '/etc/nginx/streams.conf.d'
-- nginx_package: 'nginx'
+nginx_user: 'www-data'
+nginx_path: '/etc/nginx/streams.conf.d'
+nginx_package: 'nginx'
