@@ -21,6 +21,9 @@ galaxy_info:
 
   platforms:
     - name: RedHat
+      versions:
+        - 6
+        - 7
     - name: Amazon
     - name: Ubuntu
     - name: Debian
