@@ -1,2 +1,9 @@
 ---
-# defaults file for nginx
+nginx_error_log: /var/log/nginx/error.log
+pid_path: /run/nginx.pid
+worker_connections: 1024
+listening_port: 80
+root_path: /usr/share/nginx/html
+access_log_path: /var/log/nginx/access.log
+keepalive: 65
+hash_size: 2048
