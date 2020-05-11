@@ -120,4 +120,4 @@ This is a sample playbook file for deploying the Ansible Galaxy NGINX role in a 
 ```
 License
 -------
-[GNU GENERAL PUBLIC LICENSE]()
+[GNU GENERAL PUBLIC LICENSE](https://github.com/mehdi-wsc/nginx/blob/master/LICENSE)
