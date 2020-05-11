@@ -60,14 +60,21 @@ I split variables in two directories , the default  and vars :
 defaults :
 - Variables declared here are commons for Nginx configuration , I set default values,However you can modify to your own.
 ```
+---
+    #major vars
     nginx_error_log: /var/log/nginx/error.log
     pid_path: /run/nginx.pid
+    access_log_path: /var/log/nginx/access.log
+    #events
     worker_connections: 1024
+    #http
     listening_port: 80
     root_path: /usr/share/nginx/html
-    access_log_path: /var/log/nginx/access.log
     keepalive: 65
     hash_size: 2048
+    send_file: on
+    tcp_nopush: on
+    tcp_nodelay: on
 ```
 You can modify variables to your own values.
 
