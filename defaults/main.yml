@@ -10,6 +10,6 @@ listening_port: 80
 root_path: /usr/share/nginx/html
 keepalive: 65
 hash_size: 2048
-send_file: on
-tcp_nopush: on
-tcp_nodelay: on
+send_file: "on"
+tcp_nopush: "on"
+tcp_nodelay: "on"
