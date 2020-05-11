@@ -1,6 +1,5 @@
-# Ansible NGINX Role
-==================
-
+Ansible NGINX Role
+===================
 
 This role installs NGINX Open Sourcen on RedHat/Amazon Linux, Debian/Ubuntu.
 
@@ -59,7 +58,7 @@ Role Variables
 I split variables in two directories , the default  and vars :
 
 defaults :
-- Variables declared here are commons for Nginx configuration , I set default values,However you can modify to you own.
+- Variables declared here are commons for Nginx configuration , I set default values,However you can modify to your own.
 ```
     nginx_error_log: /var/log/nginx/error.log
     pid_path: /run/nginx.pid
