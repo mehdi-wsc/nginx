@@ -1,0 +1,26 @@
+
+name: continuous integration
+
+on:
+  push:
+
+jobs:
+  molecule:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        scenario:
+          - debian-9
+          - ubuntu-18.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          path: "${{ nginx }}"
+      - name: Molecule
+        uses: gofrolist/molecule-action@master
+        with:
+          molecule_command: test
+          molecule_args: --scenario-name ${{ matrix.scenario }}
+          options: parallel
