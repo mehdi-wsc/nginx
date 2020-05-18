@@ -2,13 +2,15 @@
 name: continuous integration
 
 on:
-  push:
+  - push
 
 jobs:
-  molecule:
+  build:
     runs-on: ubuntu-18.04
     steps:
-      - uses: actions/checkout@v2
+      - name: checkout
+        uses: actions/checkout@v2
         with:
           path: "${{ github.repository }}"
-      - uses: gofrolist/molecule-action@master
+      - name: molecule
+        uses: robertdebock/molecule-action@2.2.0
