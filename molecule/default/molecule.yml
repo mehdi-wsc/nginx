@@ -23,8 +23,8 @@ lint: |
   ansible-lint
 provisioner:
   name: ansible
-scenario:
-  name: default
+  playbooks:
+    converge: ${MOLECULE_PLAYBOOK:-converge.yml}
 verifier:
   name: testinfra
   lint: |
