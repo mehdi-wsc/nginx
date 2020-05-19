@@ -5,4 +5,4 @@
   tasks:
     - name: "Include nginx"
       include_role:
-        name: "mehdi_wsc.nginx"
+        name: "nginx"
