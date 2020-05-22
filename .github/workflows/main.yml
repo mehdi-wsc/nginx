@@ -1,8 +1,8 @@
-name: CI for ansible role 
+name: CI for ansible role
 on: push
 
 jobs:
-  test:
+  test-ansible:
     name: Molecule
     runs-on: ubuntu-latest
     strategy:
@@ -19,7 +19,7 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Install test dependencies.
+      - name: Install ansible test dependencies.
         run: pip3 install molecule docker yamllint ansible-lint pylint testinfra pytest
 
       - name: Run Molecule tests.
